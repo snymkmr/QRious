@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  background: #fff;
+  color: #172033;
+}
+
+body {
+  width: 280px;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 17px;
+}
+
+#status,
+.page-title {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.page-title {
+  width: 100%;
+  overflow-wrap: break-word;
+  color: #586174;
+}
+
+canvas {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 7px 11px;
+  border: 1px solid #cbd2df;
+  border-radius: 6px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f2f5fa;
+}

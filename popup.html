@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR for this page</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>QR for this page</h1>
+      <p id="status" role="status">Getting the current page…</p>
+      <canvas id="qr" aria-label="QR code for the current page" hidden></canvas>
+      <p id="page-title" class="page-title" hidden></p>
+      <div id="actions" class="actions" hidden>
+        <button id="copy" type="button">Copy URL</button>
+        <button id="download" type="button">Save QR</button>
+      </div>
+    </main>
+    <script src="dist/popup.js"></script>
+  </body>
+</html>

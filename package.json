@@ -1,0 +1,15 @@
+{
+  "name": "qrious",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Chrome extension that creates a QR code for the current tab",
+  "scripts": {
+    "build": "esbuild src/popup.js --bundle --minify --outfile=dist/popup.js"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
