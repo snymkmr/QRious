@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "QRious — QR for this page",
   "version": "1.0.0",
+  "minimum_chrome_version": "102",
   "description": "Create a QR code for the page you're viewing.",
   "icons": {
     "16": "icons/icon-16.png",
@@ -9,7 +10,10 @@
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
-  "permissions": ["activeTab", "clipboardWrite"],
+  "permissions": ["activeTab", "clipboardWrite", "contextMenus", "storage"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
   "action": {
     "default_title": "Create a QR code",
     "default_icon": {
