@@ -80,8 +80,8 @@ copyButton.addEventListener("click", async () => {
   status.textContent = "Preparing QR image…";
 
   try {
-    const qrCanvas = await createQrCanvas();
-    const qrBlob = await canvasToPngBlob(qrCanvas);
+    const image = await createDownloadImage();
+    const qrBlob = await canvasToPngBlob(image);
     await navigator.clipboard.write([
       new ClipboardItem({ "image/png": qrBlob }),
     ]);

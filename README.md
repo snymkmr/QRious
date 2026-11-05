@@ -10,8 +10,8 @@ A Chrome extension that makes a QR code for the page in the active tab.
 4. Open a normal web page and click the QRious toolbar icon.
 
 The popup shows the QR code and page title. **Copy** copies a high-resolution
-PNG image to the clipboard; **Download** saves a print-size image with the page
-title above the QR code. Right-click a web link and choose
+PNG image with the page title above the QR code to the clipboard; **Download**
+saves the same print-size image. Right-click a web link and choose
 **Create QR for this link** to open a QR code for its destination without
 navigating there.
 
